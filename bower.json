@@ -1,0 +1,24 @@
+{
+  "name": "certificacao-bootstrap",
+  "description": "curso certificação bootstrap",
+  "main": "index.js",
+  "authors": [
+    "Keven Jesus"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "curso",
+    "bootstrap"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.2"
+  }
+}

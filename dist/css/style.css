@@ -1,0 +1,74 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+html {
+  font-size: 20px; }
+
+body {
+  padding: 10px;
+  background: #2c3e50;
+  font-size: 20px; }
+  @media (orientation: landscape) and (min-width: 768px) {
+    body {
+      background: red; } }
+
+/* Component card */
+/* card */
+/* card header */
+/* componnet modify */
+/* card */
+/* card header */
+/* componnet modify */
+/* card */
+/* card header */
+/* componnet modify */
+.card {
+  width: 100%;
+  background: #fff;
+  min-height: 50vh;
+  float: left; }
+  .card .card-header {
+    height: 50px;
+    line-height: 50px;
+    background: #f39c12; }
+    .card .card-header .card-title {
+      font-size: 1rem;
+      text-align: center;
+      font-weight: bold; }
+  .card .card-body {
+    padding: 10px; }
+  .card.card-primary .card-header {
+    background: #2980b9; }
+  .card.card-info .card-header {
+    background: #9b59b6; }
+  @media (max-width: 480px) {
+    .card.card-01, .card.card-02 {
+      width: 50%; } }
+  @media (min-width: 768px) {
+    .card.card-01, .card.card-02 {
+      width: 50vw; } }
+
+.offcanvas {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  left: -80%;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  transition: left .2s; }
+
+.open:after {
+  content: '';
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4); }
+
+.open .offcanvas {
+  left: 0; }

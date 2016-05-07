@@ -1,0 +1,19 @@
+{
+  "name": "certificacao-bootstrap",
+  "version": "1.0.0",
+  "description": "curso certificação bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "curso",
+    "bootstrap"
+  ],
+  "author": "Keven Jesus",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  }
+}
