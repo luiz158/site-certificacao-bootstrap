@@ -1,7 +1,6 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 
-
 gulp.task('thor', function(){
 	return gulp.src('./source/sass/*.scss')
 				 .pipe(sass())

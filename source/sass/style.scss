@@ -1,15 +1,1 @@
 @import "../components/bootstrap/scss/bootstrap";
-
-.about{
-	background-color: #ccc;
-	@extend .col-lg-6;
-	@extend .col-md-12;
-	.about-name,
-	.about-email{
-		background:#efefef;
-		@extend .col-lg-6;
-		@extend .col-md-12;
-	}
-}
-
-
