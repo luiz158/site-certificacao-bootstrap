@@ -1,9 +1,11 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
+var notify = require("gulp-notify");
 
 gulp.task('thor', function(){
 	return gulp.src('./source/sass/*.scss')
-				 .pipe(sass({compressed:true}))
+				 .pipe(sass({outputStyle:'compressed'}))
+				 .on('error', notify.onError({ title: 'Erro ao compilar', message: '<%= error.message %>'}))
 				 .pipe(gulp.dest('./dist/css'))
 });
 
@@ -15,6 +17,10 @@ gulp.task('buildjs', function(){
 		.pipe(gulp.dest('./dist/js'))
 });
 
+gulp.task('move-fonts', function(){
+	return gulp.src('./source/components/components-font-awesome/fonts/**')
+				.pipe(gulp.dest('./dist/fonts'));
+});
 
 gulp.task('aquaman', function(){
 	return gulp.src('./source/js/*.js')
