@@ -1,6 +1,7 @@
 //////////// CORES ////////////
 cor da barra lateral: #2f3b4c
 cor de marcação da barra lateral: #00bfe8
+cor do status: #33DE80
 cor do box "total sales": #ff8761
 cor do box "newquote": #57bdde
 cor do box "products": #6dc7be
