@@ -1,12 +1,23 @@
-$('html').on('swiperight', function(){
-	$(this).addClass('open-offcanvas');
+function openOffcanvas($element){
+	$element.addClass('open-offcanvas');
+}
+function hideOffcanvas($elemenet){
+	$elemenet.removeClass('open-offcanvas');
+}
+
+$('.open-off').on('click', function(){
+	openOffcanvas($('html'));
 });
 
-$('html').on('swipeleft', function(){
-	$(this).removeClass('open-offcanvas');
+$('html, body').on('swiperight', function(){
+	openOffcanvas($(this));
 });
 
-$('html').on('click', function(e){
+$('html, body').on('swipeleft', function(){
+	hideOffcanvas($(this));
+});
+
+$('html, body').on('click', function(e){
 	if(this === e.target)
-		$(this).removeClass('open-offcanvas');
+		hideOffcanvas($(this));
 });
