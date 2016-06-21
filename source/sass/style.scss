@@ -1,6 +1,10 @@
 @import "../components/bootstrap/scss/bootstrap";
 @import "../components/components-font-awesome/scss/font-awesome";
 
+body{
+	padding-top: 70px;
+	background-color: #efefef;
+}
 
 .offcanvas{
 	width:80%;
@@ -117,5 +121,78 @@
 		color:#b0bec5;
 		font-size: 1.5rem;
 		padding:0 .4rem;
+	}
+}
+
+.section-resume{
+	padding:0 1rem;
+	.resume{
+		@extend .col-xs-12;
+		height: 70px;
+		background-color: #fff;
+		margin-bottom: 1rem;
+		padding-left: 0;
+		padding-right: 0;
+		.resume-hook{
+			width:30%;
+			height: 70px;
+			line-height: 70px;
+			float: left;
+			background-color: $brand-info;
+			text-align: center;
+			color:#fff;
+			font-weight: bold;
+		}
+		.resume-body{
+			width:70%;
+			float: left;
+			padding-left: 1rem;
+			padding-top: 1rem;
+			.resume-title{
+				font-size: 1.2rem;
+				margin-bottom: 0;
+				font-weight: bold;
+			}
+			.resume-value{
+				font-size: .95rem;
+				margin-top: 0;
+			}
+		}
+
+		&.total-sales{
+			.resume-hook{
+				background-color: #ff8761;
+			}
+			.resume-title{
+				color:#ff8761;
+			}
+		}
+
+		&.new-quote{
+			.resume-hook{
+				background-color: #57bdde;
+			}
+			.resume-title{
+				color:#57bdde;
+			}
+		}
+
+		&.orders{
+			.resume-hook{
+				background-color: #B198DC;
+			}
+			.resume-title{
+				color:#B198DC;
+			}
+		}
+
+		&.products{
+			.resume-hook{
+				background-color: #6dc7be;
+			}
+			.resume-title{
+				color:#6dc7be;
+			}
+		}
 	}
 }
