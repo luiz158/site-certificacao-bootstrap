@@ -8,6 +8,7 @@
 	left:0;
 	top:0;
 	padding:.5rem 0;
+	z-index: 1;
 	.heading-left,
 	.heading-right{
 		@extend .col-xs-6;

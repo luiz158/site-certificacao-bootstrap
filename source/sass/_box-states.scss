@@ -9,11 +9,32 @@
 	.state-title{
 		@extend .card-title;
 		font-size: 1.5rem;
+		padding:1rem 0;
+		.item-title-right{
+			float: right;
+			font-size: 1rem;
+			color:darken(#b0bec5,5%);
+		}
+		.label-state{
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			&.info{
+				background-color: $brand-info;
+			}
+			@extend .info;
+		}
 	}
 	.state-body{
 		@extend .card-block;
 		.state-img{
 			@extend .img-fluid;
+		}
+	}
+	.state-footer{
+		@extend .card-footer;
+		.footer-text{
+			color:#b0bec5;
 		}
 	}
 }
