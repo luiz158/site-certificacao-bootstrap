@@ -6,3 +6,9 @@
 @import "box-states";
 @import "user-info";
 @import "ratings";
+
+.form-control-search{
+	position: absolute;
+  top: -.1rem;
+  left: 3rem;
+}
