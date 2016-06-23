@@ -33,8 +33,10 @@
 	}
 	.state-footer{
 		@extend .card-footer;
+		background-color: transparent;
 		.footer-text{
 			color:#b0bec5;
+			text-align: center;
 		}
 	}
 }

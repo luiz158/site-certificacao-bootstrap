@@ -1,8 +1,8 @@
 function openOffcanvas($element){
 	$element.addClass('open-offcanvas');
 }
-function hideOffcanvas($elemenet){
-	$elemenet.removeClass('open-offcanvas');
+function hideOffcanvas($element){
+	$element.removeClass('open-offcanvas');
 }
 
 $('.open-off').on('click', function(){
@@ -10,14 +10,14 @@ $('.open-off').on('click', function(){
 });
 
 $('html, body').on('swiperight', function(){
-	openOffcanvas($(this));
+	openOffcanvas($('html'));
 });
 
 $('html, body').on('swipeleft', function(){
-	hideOffcanvas($(this));
+	hideOffcanvas($('html'));
 });
 
 $('html, body').on('click', function(e){
 	if(this === e.target)
-		hideOffcanvas($(this));
+		hideOffcanvas($('html'));
 });
