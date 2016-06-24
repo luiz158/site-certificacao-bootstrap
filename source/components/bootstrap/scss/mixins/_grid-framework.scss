@@ -42,3 +42,8 @@
     }
   }
 }
+
+@mixin setColumn($col,$modifier){
+  @include make-col-span($col, 12);
+  @include make-col-modifier($modifier, $col, 12);
+}
