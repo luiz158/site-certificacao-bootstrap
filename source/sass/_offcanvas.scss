@@ -6,11 +6,11 @@
 	position: fixed;
 	left:-80%;
 	top:0;
-	//background-color: #2f3b4c;
-	background-color: red;
+	background-color: #2f3b4c;
 	@include transition(left .2s);
 	z-index:2;
 	.heading{
+		height: 60px;
 		background-color: #00bfe8;
 		padding:.85rem 1.125rem;
 	}
