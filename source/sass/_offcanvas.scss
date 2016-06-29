@@ -71,6 +71,7 @@
 				margin-left:1.125rem;
 				font-size: .9rem;
 				padding:.5rem 0;
+				display: block;
 			}
 
 			&:hover{
@@ -81,6 +82,16 @@
 	}
 	@media(orientation:landscape){
 		overflow-y:scroll;
+	}
+
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		overflow-y:initial;
+		.offcanvas-list .list-item .list-link{
+			font-size: 1rem;
+			padding:.7rem 0;
+		}
+		left:0;
+		@include setColumn(3,'lg');
 	}
 }
 

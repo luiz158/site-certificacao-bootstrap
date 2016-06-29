@@ -83,4 +83,33 @@
 			@include setColumn(6,'md');
 		}
 	}
+
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		.resume{
+			width:24%;
+			height:90px;
+			margin-left:1.25%;
+			float: left;
+			position: relative;
+			.resume-hook{
+				width:35%;
+				height:90px;
+				line-height: 90px;
+			}
+			.resume-body{
+				width:65%;
+				padding-top: 1.5rem;
+				.resume-title{
+					font-size: 1rem;
+				}
+				.resume-value{
+					font-size: .9rem;
+				}
+			}
+			&:first-of-type{
+				margin-left:0;
+			}
+		}
+	}
+
 }
