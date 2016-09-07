@@ -23,18 +23,3 @@ function mobileEvents(){
 			hideOffcanvas($('html'));
 	});
 }
-
-function checkDeviceEvents($window){
-	if($window.width() <= 1024){
-		mobileEvents();
-	}
-}
-
-
-$(function(){
-	checkDeviceEvents($(window));
-	
-	$(window).resize(function(){
-		checkDeviceEvents($(this));	
-	});
-});
