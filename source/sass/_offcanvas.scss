@@ -91,7 +91,7 @@
 			padding:.7rem 0;
 		}
 		left:0;
-		@include setColumn(3,'lg');
+		@include setColumn(3);
 	}
 }
 

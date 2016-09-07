@@ -43,7 +43,7 @@
   }
 }
 
-@mixin setColumn($col,$modifier){
-  @include make-col-span($col, 12);
-  @include make-col-modifier($modifier, $col, 12);
+@mixin setColumn($col){
+  @include make-col;
+  @include make-col-span($col);
 }

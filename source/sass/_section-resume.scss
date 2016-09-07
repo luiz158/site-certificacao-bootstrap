@@ -74,13 +74,13 @@
 
 	@media(orientation:landscape){
 		.resume{
-			@include setColumn(6,'xs');
+			@include setColumn(6);
 		}
 	}
 
 	@media(min-width: map-get($grid-breakpoints,md)){
 		.resume{
-			@include setColumn(6,'md');
+			@include setColumn(6);
 		}
 	}
 

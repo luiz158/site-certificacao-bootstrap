@@ -48,10 +48,10 @@
 				color:#000;
 			}
 			@media(orientation:landscape){
-				@include setColumn(4,'xs');
+				@include setColumn(4);
 			}
 			@media(min-width: map-get($grid-breakpoints,md)){
-				@include setColumn(4,'md');
+				@include setColumn(4);
 			}
 		}
 	}

@@ -15,7 +15,7 @@
 
 @media(min-width: map-get($grid-breakpoints,lg)){
 	.container-lg{
-		@include setColumn(9,'lg');
+		@include setColumn(9);
 		margin-left: percentage(3/12);
 		@include clearfix();
 	}
