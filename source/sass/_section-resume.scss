@@ -86,11 +86,7 @@
 
 	@media(min-width: map-get($grid-breakpoints,lg)){
 		.resume{
-			width:24%;
-			height:90px;
-			margin-left:1.25%;
-			float: left;
-			position: relative;
+			@include setColumn(3);
 			.resume-hook{
 				width:35%;
 				height:90px;
@@ -114,7 +110,9 @@
 
 	.resume{
 		padding-left: 0;
-		padding-right: 0;
+		&:last-of-type{
+			padding-right: 0;
+		}
 	}
 
 }
