@@ -3,11 +3,11 @@
 	padding:0 1rem;
 	.resume{
 		@extend .col-xs-12;
-		height: 70px;
-		background-color: #fff;
-		margin-bottom: 1rem;
-		padding-left: 0;
-		padding-right: 0;
+		.resume-item{
+			height: 70px;
+			background-color: #fff;
+			margin-bottom: 1rem;
+		}
 		.resume-hook{
 			width:30%;
 			height: 70px;
@@ -110,6 +110,11 @@
 				margin-left:0;
 			}
 		}
+	}
+
+	.resume{
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 }
