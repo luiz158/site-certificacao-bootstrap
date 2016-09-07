@@ -1,8 +1,10 @@
 .user-info{
 	@extend .col-xs-12;
-	@extend .card;
 	padding-left: 0;
 	padding-right: 0;
+	.user-info-item{
+		@extend .card;
+	}
 	.user-info-heading{
 		height:170px;
 		background:url('../img/ilustracao.jpg') center top no-repeat;
@@ -53,6 +55,13 @@
 			@media(min-width: map-get($grid-breakpoints,md)){
 				@include setColumn(4);
 			}
+		}
+	}
+
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		@include setColumn(6);
+		.user-info-item{
+			height: 505px;
 		}
 	}
 }

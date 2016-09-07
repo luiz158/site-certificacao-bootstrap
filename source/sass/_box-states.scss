@@ -1,15 +1,18 @@
 .section-box-state{
 	@extend .section-resume;
+	@extend .row;
 }
 
 .box-state{
-	@extend .card;
 	@extend .col-xs-12;
-	padding-top: .5rem;
+	.box-state-item{
+		@extend .card;
+		padding:1rem;
+	}
 	.state-title{
 		@extend .card-title;
-		font-size: 1.5rem;
-		padding:1rem 0;
+		font-size: 1.2rem;
+		padding:.5rem 0;
 		.item-title-right{
 			float: right;
 			font-size: 1rem;
@@ -37,6 +40,31 @@
 		.footer-text{
 			color:#b0bec5;
 			text-align: center;
+		}
+	}
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		&.product-visitors{
+			@include setColumn(9);
+			.box-state-item{
+				height: 469px;
+			}
+		}
+		&.week-sales,
+		&.total-charge{
+			@include setColumn(3);
+			height: 226.5px;
+			.state-title{
+				text-align: center;
+			}
+		}
+		&.week-sales{
+			margin-bottom: 2rem;
+		}
+		&.website-traffic{
+			@include setColumn(6);
+			.box-state-item{
+				height: 505px;
+			}
 		}
 	}
 }

@@ -87,6 +87,9 @@
 	@media(min-width: map-get($grid-breakpoints,lg)){
 		.resume{
 			@include setColumn(3);
+			.resume-item{
+				height: 90px;
+			}
 			.resume-hook{
 				width:35%;
 				height:90px;
